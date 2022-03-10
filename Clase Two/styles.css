@@ -1,0 +1,218 @@
+/* 
+Position 
+static (default) | absolute | relative | fixed | sticky
+
+Propiedades offset 
+-top
+-right 
+.bottom 
+-left 
+
+Cada valor tiene una referencia para moverse 
+relative -Su ubicacion inicial es la web 
+absolute -El ancestro posicionado mas cercano 
+        Si no tiene ancestro, su referencia es el body 
+
+fixed - Viewport
+
+*/
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 200vh;
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 300px; */
+    /* background: blue; */
+/* }
+
+.fixed{
+    top: 0;
+    position: fixed;
+    background: red;
+    opacity: 0.5;
+}
+
+.header{
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: black;
+    position: fixed;
+    height: 3rem;
+    left: 0;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+a{
+    display: inline-block;
+    color: white;
+}
+
+:target{
+    padding-top:3rem ;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+main{
+    grid-column-start: span 3;
+}
+
+.sidebar{
+    position: sticky;
+    top: 4rem;
+    width: 100%;
+    background: tomato;
+    height: 400px;
+}
+
+.container{
+    min-height: 200vh;
+} */
+
+/* 
+   1. Elementos con nivel de apilamiento negativo
+   2. Elementos con position static 
+   3. Elementos con nivel neutro (0) o auto
+   4. Elementos con nivel de apilamiento mayor a 0
+
+   -Elementos posicionados 
+   -Elementos hijos de flex y grid containers con z-index distinto a auto 
+   -Elemento con opacity, filtros, min-blend-mode y perspective con valor diferente al inicial
+*/
+
+/* .element{
+    width: 200px;
+    height: 200px; */
+    /* position: relative; */
+    /* position: absolute;
+    top: 0;
+    background: red;
+    opacity: 0.5;
+    pointer-events: none;
+} */
+
+
+
+/* .element:nth-of-type(1){ */
+    /* position: absolute; */
+    /* background: red;
+    top: 100px; */
+    /* opacity: 0.5; */
+/* }
+
+.element:nth-of-type(2){
+    background:green;
+    z-index: 1;
+    top: 100px; */
+    /* opacity: 0.5; */
+/* }
+
+.element:nth-of-type(3){
+    background: yellow;
+    display: flex;
+    z-index: 1;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    background: crimson;
+    position: relative;
+    left: 100px;
+}
+
+.child:nth-child(2){
+    background: cornflowerblue;
+    left: 50px;
+}
+
+.element:nth-of-type(4){
+    background: blue;
+} */
+
+/* Ejercicio Modal */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    min-height: 300vh;
+}
+
+main{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+p{
+    margin-bottom: 2rem;
+}
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    /* display: none; */
+    /* z-index: -1; */
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+}
+
+.modal.active{
+    /* z-index: 1000; */
+    /* display: block; */
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.content{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; 
+    max-width: 400px;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.content h1, 
+.content p{
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,26 @@
+$name : value; 
+$selector : h1;
+$value-one: 2rem; 
+$value-two: 3rem; 
+$value : $value-one + $value-two;
+
+$color: blue;
+
+#{$selector}{
+    color: $color;
+    height: $value;
+}
+
+p{
+    $color-link: red; 
+    $color-span: blue;
+
+    a{
+        color: $color-link,
+    }
+
+    span{
+        color: $color-span;
+    }
+}
+

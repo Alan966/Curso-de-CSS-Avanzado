@@ -1,0 +1,355 @@
+/* 
+Declaracion de la variable 
+
+:root{
+    --color : red;
+}
+
+Uso de la variable
+h1{
+    color: var(--color, fallack);
+}
+
+Valores que pueden recibir 
+:root{
+    --color:hsl | rgba | HEX | ;
+    --border: 1px solid red;
+    --text: 'Hola mundo!';
+    --shadow: 2px 2px red, 2px 2px red, 2px 2px red;
+    --color-two: var(--color);
+
+}
+
+*/
+/* :root{
+    --primary-color: blueviolet;
+    --warning-color:yellow;
+}
+
+header{
+    width: 100%;
+    height: 3rem;
+    background: var(--primary-color, var(--warning-color));
+}
+
+h2{
+    color: var(--primary-color, red);
+}
+
+p{
+    color: var(--primary-color);
+} */
+
+/* :root{
+    --min-size: 2rem; 
+    --max-size: 3rem;
+    --size: calc(var(--min-size) + var(--max-size));
+}
+
+.element{
+    width: var(--size);
+    height: var(--size);
+    background: red;
+} */
+
+/* 
+   Tipos de scope en variables CSS
+
+   Global 
+   :root{
+    --color:red;
+}
+
+h1{
+    color: var(--color);
+}
+
+DOM 
+
+article {
+    --color-text:blue;
+}
+*/
+/* Pasa una varibel desde el archivo index.css */
+
+
+/* article p {
+    font-size: var(--bg);
+    color: var(--color);
+}
+
+   Hoisting
+    p{
+        color:var(--color)
+    }
+
+
+ */
+
+
+/* p{
+    color: var(--color);
+} */
+
+/* :root{
+    --color-red:red; 
+}
+
+body{
+    --color:pink;
+    color: var(--color-red);
+}
+
+.container{
+    color: var(--color-red);
+}
+
+.container p{
+    --color: green; 
+    color: var(--color);
+} */
+
+/*Diferencia entre variables CSS y variables SASS  */
+
+/* :root{ */
+    /* --name:red; 
+    --value-one: 2rem;
+    --value-two: 3rem; 
+    --value : calc(var(--value-one) + var(--value-two)); */
+    /* --color:red;
+    --color-blue: blue;
+}
+
+body{
+    color: var(--color);
+}
+
+h1{
+    color: var(--color-blue);
+    height: var(--value);
+    background: yellow;
+}
+
+h1.red{
+    --color:red;
+} */
+
+/* Sintaxis en SASS 
+En Css tenemos un Scope de DOM 
+En SASS tenemos un Scope de Bloque
+
+*/
+
+/* p{
+    --color-link:red; 
+    --color-span:blue; 
+}
+
+span{
+    color: var(--color-span);
+}
+
+a{
+    color: var(--color-link);
+} */
+/* :root{
+    --header-height:2rem;
+    --header-margin: 1rem;
+    --font-size: 1rem;
+    --title-font-size: 1.75rem;
+    --columns:1;
+    --show-element:none;
+}
+
+@media screen and (min-width: 1024px){
+
+    :root{
+        --header-height: 4rem;
+        --header-margin: 2rem;
+        --font-size:1.25rem;
+        --title-font-size: 2rem;
+        --columns:4;
+        --show-element:block;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: calc(var(--header-height) + var(--header-margin));
+    font-size: var(--font-size);
+}
+
+h1{
+    font-size: var(--title-font-size);
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: black;
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+main{
+    grid-column-start: span 3;
+}
+
+h2{
+    padding: 1rem;
+    background: tomato;
+}
+
+h3{
+    display: var(--show-element);
+} */
+
+/* Variables CSS en creacion de temas */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-bg:#FBFBFE;
+    --card-bg: #FFFFFF;
+    --title-color: #000000; 
+    --text-color: grey;
+    --footer-bg: #FCFCFC;
+    --boxshadow-card: 0 2px 4px rgba(174, 190, 205, .3);
+} */
+/* @media (prefers-color-scheme: no-prefercer | light | dark) */
+
+/* @media (prefers-color-scheme: dark){
+:root{
+    --body-bg:#1A252D;
+    --card-bg: #2a3b47;
+    --title-color: white; 
+    --text-color: lightgray;
+    --footer-bg: #22303A;
+    --boxshadow-card: 0 2px 4px rgba(0, 0, 0 ,0.15)
+}
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: var(--body-bg);
+}
+
+.card{
+    overflow: hidden;
+    border-radius: 0.5rem;
+    max-width: 300px;
+    background: var(--card-bg);
+    box-shadow: var(--boxshadow-card);
+    color: var(--text-color);
+}
+.header{
+    position: relative;
+}
+
+.level{
+    bottom: 0.75rem;
+    left: 0.75rem;
+    position: absolute;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: white;
+}
+
+.image{
+    width: 100%;
+}
+
+.content{
+    padding: 1rem;
+}
+
+.content h3{
+    color: var(--title-color);
+    margin-bottom: 0.5rem;
+}
+
+.footer{
+    padding: 0.75rem 1rem;
+    background: var(--footer-bg);
+} */
+
+/* Creando un sistema de botones */
+:root{
+    --color:tomato; 
+    --color-alt:red;
+}
+
+div{
+    margin-bottom: 2rem;
+}
+
+.button{
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    background: var(--color);
+    color: #fff;
+    border: 1px solid var(--color);
+}
+
+.button.green{
+    --color: limegreen; 
+    --color-alt:green;
+}
+
+.button.blue{
+    --color: steelblue; 
+    --color-alt:blue;
+}
+
+.button:hover{
+    background: var(--color-alt);
+}
+
+.button.ghost{
+    background: transparent;
+    color: var(--color);
+}
+
+.button.ghost:hover{
+    background: var(--color);
+    color: #fff;
+}
+
+.button.dark{
+    background: var(--color-alt);
+
+}
+
+.button.dark:hover{
+    background: var(--color);
+}
+
+.button.transparent{
+    background: transparent;
+    border: none;
+    color: var(--color);
+}
+
+.button.transparent:hover{
+    color: var(--color-alt);
+}
