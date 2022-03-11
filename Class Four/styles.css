@@ -1,0 +1,386 @@
+/* 
+Pseudoelementos para generar contenido 
+::before 
+::after
+*/
+
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+/* .teacher::before{
+    content: 'Prof.';
+}
+
+.username::before{
+    content: '@';
+} */
+
+/* .container{
+    width: 300px;
+    height: 100px;
+    background: tomato;
+}
+
+.container:empty::before{
+    content: 'No hay contenido';
+} */
+
+/* Attr() */
+
+/* p::before{
+    content: attr(data-code);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+p::after{
+    content: attr(data-money);
+    font-weight: 600;
+} */
+
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+/* .container{
+    position: relative;
+    width: 10em;
+    height: 100%;
+    color: white;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.container::before, 
+.container::after{
+    transform: scale(0);
+}
+
+.container:hover::before, 
+.container:hover::after{
+    transform: scale(1);
+}
+
+.container::before{
+    transition: transform 0.25s;
+    content: attr(data-name);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.container::after{
+    content: '\1F49A' 'Level - ' attr(data-level);
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.8;
+} */
+
+
+/* p{
+    quotes: '\201F' '\201D';
+}
+
+p::before{
+    content: open-quote;
+}
+
+p::after{
+    content: close-quote;
+} */
+
+/* body{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user::after{
+    content: '';
+    display: block;
+    margin-left: 0.25rem;
+    background: red;
+    background-image: url(./img/kombucha.png);
+    width: 2.2rem;
+    height: 1.5rem;
+    background-size: contain;
+}
+
+.user.peru::after{
+    background: url(./img/peru.png);
+}
+
+.user.bolivia::after{
+    background: url(./img/bolivia.png);
+}
+
+.user.mexico::after{
+    background: url(./img/mexico.png);
+} */
+
+/* .container::before, 
+.container::after{
+    content: '';
+    display: block;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.tooltip{
+    cursor: pointer;
+    position: relative;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    background: black;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -7.5px;
+    width: 15px;
+    height: 15px;
+    background: inherit;
+    display: block;
+    transform: translate(-50%) rotate(45deg);
+}
+
+.heart{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: red;
+    transform: rotate(-45deg);
+    border-radius: 5px;
+}
+
+.heart::before, 
+.heart::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    border-radius: 100%;
+}
+
+.heart::before{
+    left: 50%;
+}
+
+.heart::after{
+    top: -50%;
+} */
+
+/* Boton hamburguesa */
+
+/* body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+/* 
+.button{
+    width: 4rem;
+    height: 3.25rem; */
+    /* background: red; */
+    /* position: relative;
+    cursor: pointer;
+    transition: transform 0.25s;
+}
+.button::before, 
+.button::after{
+    content: '';
+    display: block;
+}
+
+
+.button::before, 
+.button::after,
+.line{
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background: black;
+    transition: all 0.25s;
+}
+
+.button::before{
+top: 0;
+}
+
+.line{
+top: 50%;
+transform: translateY(-50%);
+}
+
+.button::after{
+   bottom: 0;
+} */
+/* Boton en su estado activo */
+/* .button.active{
+   transform: rotate(180deg);
+}
+
+.button.active .line{
+   display: none;
+}
+
+.button.active::before{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.button.active::after{
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+} */
+
+/*  Pseudoelementos con variables CSS */
+
+body{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
+p{
+    --color:red;
+    margin-bottom: 1rem;
+}
+
+p::selection{
+    color: white;
+    background: var(--color);
+    /* text-shadow: 2px 2px 2px; */
+}
+/* 
+.message{
+    --bg: blue;
+    --message: 'Este es un mensaje';
+    --icon:	'\1F60A';
+    color: white;
+    background: var(--bg);
+    padding: 1rem 1.25rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.message::before{
+    content: var(--icon);
+    margin-right: 0.25rem;
+}
+
+.message::after{
+    content: var(--message);
+}
+
+.message.alert{
+    --icon: '\1F608';
+    --message: 'Esta es una accion peligrosa';
+    --bg: goldenrod;
+}
+
+.message.succes{
+    --icon: '\25C0';
+    --message: 'Compra realizada con exito';
+    --bg:limegreen;
+}
+
+.message.error{
+    --icon:'\1F525';
+    --message: 'Error al terminar tu compra'; 
+    --bg:tomato;
+} */
+
+/* p::first-line{
+    color: red;
+}
+
+p span{
+    color: red;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    background: #22303A;
+    color: white;
+}
+
+img{
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+p::first-line{
+    color: #58B3F3;
+    font-weight: 800;
+    text-transform: uppercase;
+} */
+
+p:hover::first-letter{
+    color: var(--color);
+
+}
+
+p::first-letter{
+    font-family: serif;
+    font-size: 3rem;
+    font-weight: 800;
+    float: left;
+    line-height: 0.7;
+}
+
+p:nth-child(1){
+    --color:red;
+}
+
+p:nth-child(2){
+    --color:black; 
+}
+
+p:nth-child(3){
+    --color:green;
+}
