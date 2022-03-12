@@ -1,0 +1,183 @@
+/* div{ */
+    /* margin-left: 2rem; */
+    /* display: list-item;
+    list-style-type: none;
+} */
+
+/* symbols(order, 'a' 'b' 'c') */
+
+/* ul, ol{ */
+    /* list-style-type: circle | decimal |  upper-roman | lower-roman; */
+    /* list-style-type: upper-roman; */
+    /* list-style-type: symbols(symbolic  '4' '1' '2'); */
+
+    /* list-style-image: url('https://uc-emoji.azureedge.net/orig/ba/3e73d109f3159487ebe0f25be13314.png'); */
+    /* list-style-type: none; */
+
+    /* outline: 1px solid red; */
+    /* padding-left: 0; */
+    /* list-style-position: inside;
+}
+
+ li::marker{ */
+    /* outline: 1px solid blue; */
+    /* content: url(./img/airpods.png);
+    color: red;
+} */
+/*
+li li {
+    outline: 1px solid green;
+} */
+
+/* li{
+    display: flex;
+}
+
+li::before{
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background:url(./img/airpods.png);
+    background-size: contain;
+    margin-right: 0.25rem;
+} */
+
+/* Contadores */
+
+body{
+    font-size: 2rem;
+}
+
+/* ul{
+    counter-reset: list-counter 5;
+    list-style-type: none;
+}
+
+li{
+    counter-increment: list-counter 2;
+}
+
+li::before{
+    content: counter(list-counter, upper-roman) '. ';
+} */
+
+/* ol{ */
+    /* list-style: none;
+    counter-reset: list-counter; */
+    /* counter-increment: list-counter;
+}
+
+li::before{
+    content: counters(list-counter, '.', decimal-leading-zero) ' ';
+} */
+
+/* Ejercicio de subcapitulos */
+/* 
+body{
+    counter-reset: chapter;
+}
+
+section{
+    counter-reset: sub-cahpter;
+    counter-increment: chapter;
+}
+
+p{
+    counter-increment: sub-chapter;
+}
+
+p::before{
+    content: counter(chapter) '.' counter(sub-chapter) ' ';
+}
+
+h2::after{
+    content: ' no. ' counter(chapter);
+} */
+
+/* Ejercicio calculadora con contadores */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100px;
+    counter-reset: suma;
+    border: 1px solid #666;
+    border-radius: 0.5rem;
+    transform: scale(2);
+}
+
+.result{
+    order: -1;
+    color: white;
+    text-align: right;
+    background: steelblue;
+    padding-right: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.result::before{
+    content: counter(suma);
+}
+
+.numbers{
+    order: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+label{
+    cursor: pointer;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+input{
+    opacity: 0;
+    position: absolute;
+}
+
+input:checked + label{
+    color: red;
+}
+
+input:checked{
+    counter-increment: suma;
+}
+
+input:nth-of-type(1):checked{
+    counter-increment: suma;
+}
+input:nth-of-type(2):checked{
+    counter-increment: suma 2;
+}
+input:nth-of-type(3):checked{
+    counter-increment: suma 3;
+}
+input:nth-of-type(4):checked{
+    counter-increment: suma 4;
+}
+input:nth-of-type(5):checked{
+    counter-increment: suma 5;
+}
+input:nth-of-type(6):checked{
+    counter-increment: suma 6;
+}
+input:nth-of-type(7):checked{
+    counter-increment: suma 7;
+}
+input:nth-of-type(8):checked{
+    counter-increment: suma 8;
+}
+input:nth-of-type(9):checked{
+    counter-increment: suma 9;
+}
