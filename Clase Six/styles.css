@@ -1,0 +1,196 @@
+/* Formatos digitales de fuentes 
+True Type Font (TTF)
+Open True Type Font (OTF)
+Embedded Open Type (EOT)
+Web Open Font Format (WOFF) (WOFF2)
+Scaleble Vector Graphics (SVG)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Como descargar una fuente */
+
+@font-face {
+    font-family: 'Brush';
+    font-style: oblique;
+    font-weight: 400;
+    src: local('Alex Brush'), local('Alex Brush Regular'),
+    url('./fonts/AlexBrush-Regular.ttf') 
+    format('truetype');
+    /* font-display: auto | block | swap | fallback | optional */
+    font-display: auto;
+  }
+
+  /* Ejercicio de un sistema de fuentes con fuentes generadas en Font Squirrel */
+
+/* @font-face{
+    font-family: 'title-font';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: local('gladifilthefte-regular'), local('gladifilthefte') , 
+     url('./fonts/gladifilthefte-webfont.woff2') format('woff2');
+}
+@font-face{
+    font-family: 'body-font';
+    font-style: normal;
+    font-weight: 400;
+    font-display: optional;
+    src: local('montserratalternates-black'), local('montserratalternates-black-regular') , 
+     url('./fonts/montserratalternates-black-webfont.woff2') format('woff2');
+}
+
+:root{
+    --title-font : 'title-font', cursive; 
+    --body-font : 'body-font', sans-serif;
+}
+
+body, 
+.body-font
+{
+    font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5 , h6, 
+.title-font
+{
+    font-family: var(--title-font);
+} */
+
+body{
+    font-family: sans-serif;
+}
+/* 
+p{
+    max-width: 300px;
+    background: steelblue;
+}
+
+p::before{
+    content: attr(class);
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+} */
+
+/* white-space */
+
+/* .white-space .normal{
+    white-space: normal;
+}
+
+.white-space .nowrap{
+    white-space: nowrap;
+}
+
+.white-space .pre{
+    white-space: pre;
+}
+
+.white-space .pre-wrap{
+    white-space: pre-wrap;
+}
+
+.white-space .pre-line{
+    white-space: pre-line;
+} */
+
+/* word-break */
+
+/* .word-break .normal{
+    word-break: normal;
+}
+
+.word-break .normal{
+    word-break: normal;
+}
+
+.word-break .break-word{
+    word-break: break-word;
+}
+
+.word-break .keep-all{
+    word-break: keep-all;
+}
+
+.overflow-wrap .normal{
+    overflow-wrap: normal;
+}
+
+.overflow-wrap .anywhere{
+    overflow-wrap: anywhere;
+}
+
+.overflow-wrap .break-word{
+    overflow-wrap: break-word;
+} */
+
+/* hyphens */
+/* .hyphens .none{
+    hyphens: none;
+}
+
+.hyphens .manueal{
+    hyphens: manual;
+}
+
+.hyphens .auto{
+    hyphens: auto;
+} */
+
+/* Resolver desbordamiento */
+/* text-overflow */
+
+/* .text-overflow p{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-overflow .clip{
+    text-overflow: clip;
+}
+
+.text-overflow .ellipsis{
+    text-overflow: ellipsis;
+}
+
+.text-overflow .custom{
+    text-overflow: "---";
+} */
+
+/* line-clamp */
+
+/* .line-clamp p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+} */
+
+/* [class*="row-text"]{
+    --rows: 1;
+    --line-height: 1.3rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; */
+    /* -webkit-line-clamp: var(--rows); */
+    /* max-height: calc(var(--line-height) * var(--rows));
+    line-height: var(--line-height);
+    overflow: hidden;
+}
+
+.row-text-1{
+    --rows: 1;
+}
+
+.row-text-2{
+    --rows: 2
+}
+
+.row-text-3{
+    --rows: 3
+}
+
+.width-30{
+    width: 200px;
+} */
