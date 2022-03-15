@@ -1,0 +1,124 @@
+/* .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.active{
+    grid-column-start: span 1;
+    grid-row-start: 1;
+}
+
+div::before{
+    content: attr(class);
+    display: block;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+.grayscale img{
+    filter: grayscale(60%);
+}
+
+.sepia img{
+    filter: sepia(70%);
+}
+
+.invert img{
+    filter: invert(40%);
+}
+
+.hue-rotate{
+    filter: hue-rotate(0);
+    animation: hue 3s linear infinite;
+}
+
+@keyframes hue{
+    to {
+        filter: hue-rotate(1turn);
+    }
+}
+
+.brightness{
+    filter: brightness(40%);
+    animation: brightness 3s linear infinite alternate;
+}
+
+@keyframes brightness{
+    to{
+        filter: brightness(200%)
+    }
+}
+
+.contrast img{
+    filter: contrast(150%);
+}
+
+.saturate img{
+    filter: saturate(200%);
+}
+
+.blur img{
+    filter: blur(0);
+    animation: blur 5s linear infinite alternate ;
+}
+
+@keyframes blur{
+    to{
+        filter: blur(5px);
+    }
+}
+
+.opacity img{
+    filter: opacity(0.5);
+}
+
+.drop-shadow img{
+    filter: drop-shadow(2px 2px 5px red);
+} */
+
+
+/* Ejercicio multiples filtros en un elemento */
+
+/* 
+img{
+    width: 50%;
+}
+
+img:nth-child(2){
+    filter: sepia(0.5) contrast(1.25) saturate(2);
+} */
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #f2f2f2;
+}
+
+.element{
+    width: 200px;
+    height: 200px;
+    border-radius: 0.25rem;
+    position: relative;
+    background: white;
+}
+
+.element::before{
+    content: '';
+    position: absolute;
+    display: block;
+    background: grey;
+    width: 90%;
+    left: 5%;
+    height: 1rem;
+    border-radius: 100%;
+    bottom: -0.5rem;
+    filter: blur(3px) opacity(0.25);
+    z-index: -1;
+}
