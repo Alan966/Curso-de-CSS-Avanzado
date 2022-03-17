@@ -1,0 +1,169 @@
+/* .container{
+    outline: 5px solid red;
+} */
+
+/* body{
+    display: flex;
+    flex-direction: column;
+} */
+/* 
+div{
+    float: left;
+    width: 300px;
+    height: 300px; */
+    /* shape-outside:inset(100px  round 1rem 2rem 3rem ); */
+/* } */
+
+/* :root{ */
+    /* --clip: circle(50px at 40px 20%); */
+    /* --clip:ellipse(100px 100px at 40% 50%); */
+    /* --clip: polygon(0 0, 100% 0, 100% 75%, 75% 75%); */
+
+/* } */
+
+/* .clip-path{ */
+    /* clip-path: inset(100px); */
+    /* clip-path: var(--clip); */
+    /* clip-path: url('./imgs/witch-1751025.svg#bruja-logo');
+} */
+
+/* .shape-outside{ */
+    /* shape-outside: inset(100px); */
+    /* shape-outside: var(--clip); */
+    /* shape-outside: url('./imgs/witch-1751025.svg');
+    shape-margin: 1rem ;
+} */
+
+/* img{
+    display: block; */
+    /* width: 150px; */
+    /* border-radius: 2rem; */
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover; */
+
+    /* clip-path: inset(top, right, bottom, left); */
+    /* clip: rect(top, right, bottom, left ); */
+    /* clip-path: inset(100px  round 1rem 2rem 3rem ); */
+
+/* } */
+
+
+/* img{
+    width: 100%;
+    display: block;
+} */
+
+
+/* img{
+    width: 100%;
+    display: block; */
+    /* clip-path: inset(10%); */
+    /* clip-path: circle(100px); */
+    /* clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    transition: clip-path 2s;
+} */
+
+/* img:hover{ */
+    /* clip-path: inset(20%); */
+    /* clip-path: circle(20% at 20% 70%); */
+    /* clip-path: polygon(0 0, 50% 100%, 100% 0); */
+/* } */
+
+/* Mascaras de recorte */
+
+*{
+    margin: 0;
+}
+
+/* img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block; */
+    /* mask: url('./imgs/puppy-32025.svg') no-repeat center / 500px */
+    /* mask-image: url('./imgs/puppy-32025.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 500px; */
+    /* mask-image: url('./imgs/circle.png');
+    mask-repeat: no-repeat;
+    mask-position: center, 50px center; */
+    /* mask-composite: subtract; */
+    /* mask-composite: intersect; */
+    /* mask-composite: exclude; */
+/* } */
+
+/* Compopsicion de mascaras */
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body{
+    background: yellow;
+}
+
+.container{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: blue;
+
+    mask:url('./imgs/circle.png'), url('https://cdn-icons-png.flaticon.com/512/598/598234.png');
+    mask-size: 100%, 3rem;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-composite: subtract;
+} */
+
+*{
+    margin :0;
+}
+
+body{
+    min-height: 200vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background:url('https://i2.wp.com/puntodecorte.net/wp-content/uploads/2021/12/2021929-1632899463386.jpg?w=1000&ssl=1') no-repeat center bottom ;
+    position: relative;
+    background-size: 30%;
+    border-bottom: 2px solid black;
+}
+
+.img{
+    min-width:100vw;
+    min-height: 100vh; 
+    object-fit: cover;
+    display: block;
+    background-image:linear-gradient( #ff63a7 10%, #FFBCD9 30%, white 40% , #1ec6ff 70%, #00aae4 80%);
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-mask : url('https://i.postimg.cc/ydTjFcQh/mascara.png') no-repeat center / cover;
+}
+
+h1{
+    position: fixed;
+    color: white;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    top: 15%;
+    left: 50%;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 5rem;
+    background: linear-gradient(#e66465, #9198e5);
+    box-shadow: purple .3em .2em .2em;
+    font-weight: 800;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.37);
+}
