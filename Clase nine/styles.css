@@ -1,7 +1,7 @@
 /* Multiply */
 
 body{
-    /* mix-blend-mode: normal; */
+    /* mix-blend-mode: normal;  */
     /* background-blend-mode: ; */
     /* 
       initial - Valor inicial de la propiedad 
@@ -10,35 +10,35 @@ body{
       inherit - Heredar Los modos de fusion 
     */
     /* min-height: 100vh;
-    background-image:url('https://images.unsplash.com/photo-1647249969560-7fe1d2ef3ae6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80'),  */
-    /* url('https://images.unsplash.com/photo-1647196647082-12f203203c37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'); */
+    background-image:url('https://images.unsplash.com/photo-1647249969560-7fe1d2ef3ae6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80'),
+    url('https://images.unsplash.com/photo-1647196647082-12f203203c37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');  */
     /* linear-gradient(red, green); */
-    /* background-color: red; */
-    /* background-repeat: no-repeat;
+    /* background-color: red;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-blend-mode: multiply; */
+    background-blend-mode: multiply;  */
 
 }
 
 /* img{
     width: 24%;
     mix-blend-mode: multiply;
-    position: absolute; */
+    position: absolute;  */
     /* left: 0; */
-/* } */
+/* }  */
 
 /* Screen */
 
 body{
     /* mix-blend-mode: normal; */
     /* background-blend-mode: ; */
-    /* min-height: 100vh;
-    background-image:url('https://images.unsplash.com/photo-1647249969560-7fe1d2ef3ae6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80'),  */
-    /* url('https://images.unsplash.com/photo-1647196647082-12f203203c37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'); */
+    /* min-height: 100vh; */
+    /* background-image:url('https://images.unsplash.com/photo-1647249969560-7fe1d2ef3ae6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80'), */
+    /* url('https://images.unsplash.com/photo-1647196647082-12f203203c37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');  */
     /* linear-gradient(red, green); */
-    /* url('https://images.unsplash.com/photo-1647203929468-e9d5f1ec4334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=821&q=80');
-    background-color: green;
+    /* url('https://images.unsplash.com/photo-1647203929468-e9d5f1ec4334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=821&q=80'); */
+    /* background-color: green;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -50,28 +50,28 @@ body{
    soft-light
 */
 
-/* body{
+body{
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    mix-blend-mode: normal; */
+    mix-blend-mode: normal;
     /* background-blend-mode: ; */
-    /* min-height: 100vh;
-    background-image:url('https://images.unsplash.com/photo-1647249969560-7fe1d2ef3ae6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80'),  */
-    /* url('https://images.unsplash.com/photo-1647196647082-12f203203c37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'); */
+    min-height: 100vh;
+    background-image:url('https://images.unsplash.com/photo-1647249969560-7fe1d2ef3ae6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80'),
+    url('https://images.unsplash.com/photo-1647196647082-12f203203c37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'),
     /* linear-gradient(red, green); */
-    /* url('https://images.unsplash.com/photo-1647203929468-e9d5f1ec4334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=821&q=80'); */
-    /* background-color: green; */
-    /* background-repeat: no-repeat;
+    url('https://images.unsplash.com/photo-1647203929468-e9d5f1ec4334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=821&q=80');
+    background-color: green; 
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; */
-    /* background-blend-mode: overlay; */
-    /* background-blend-mode: hard-light; */
-    /* background-blend-mode: soft-light;
-    transition: background-color 0.25s;
-} */
+    background-position: center; 
+    background-blend-mode: overlay;
+    background-blend-mode: hard-light;
+    background-blend-mode: soft-light;
+    /* transition: background-color 0.25s; */
+} 
 /* 
 body:hover{
     background-color: dodgerblue;
@@ -105,13 +105,13 @@ body{
     /* transition: background-color 0.25s; */
 }
 
-/* h1{
+h1{
     color: white;
     font-family: sans-serif;
     font-size: 15rem;
     font-weight: 800;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-} */
+}
 
 /* 
 Difference
@@ -197,13 +197,13 @@ Selecciona el que tiene mayo luminocidad
     /* mix-blend-mode: luminosity;
 } */
 
-body{
+/* body{
     background: blue;
 }
 
 article{
     position: relative;
-    /* isolation: isolate; */
+     isolation: isolate;
 }
 
 P{
@@ -218,4 +218,4 @@ P{
 img{
     width: 100%;
     mix-blend-mode: screen;
-}
+} */

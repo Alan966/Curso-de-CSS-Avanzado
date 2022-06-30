@@ -5,7 +5,7 @@ static (default) | absolute | relative | fixed | sticky
 Propiedades offset 
 -top
 -right 
-.bottom 
+-bottom 
 -left 
 
 Cada valor tiene una referencia para moverse 
@@ -16,7 +16,7 @@ absolute -El ancestro posicionado mas cercano
 fixed - Viewport
 
 */
-/* 
+ 
 *{
     margin: 0;
     padding: 0;
@@ -32,9 +32,9 @@ body{
 .container{
     position: relative;
     width: 100%;
-    height: 300px; */
+    height: 300px; 
     /* background: blue; */
-/* }
+}
 
 .fixed{
     top: 0;
@@ -51,6 +51,7 @@ body{
     width: 100%;
     background: black;
     position: fixed;
+    z-index: 10;
     height: 3rem;
     left: 0;
 }
@@ -93,7 +94,7 @@ main{
 
 .container{
     min-height: 200vh;
-} */
+} 
 
 /* 
    1. Elementos con nivel de apilamiento negativo
@@ -103,7 +104,8 @@ main{
 
    -Elementos posicionados 
    -Elementos hijos de flex y grid containers con z-index distinto a auto 
-   -Elemento con opacity, filtros, min-blend-mode y perspective con valor diferente al inicial
+   -Elemento con opacity, filtros, min-blend-mode y perspective con valor 
+   diferente al inicial
 */
 
 /* .element{

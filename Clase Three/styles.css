@@ -17,7 +17,6 @@ Valores que pueden recibir
     --text: 'Hola mundo!';
     --shadow: 2px 2px red, 2px 2px red, 2px 2px red;
     --color-two: var(--color);
-
 }
 
 */
@@ -137,7 +136,6 @@ h1.red{
 /* Sintaxis en SASS 
 En Css tenemos un Scope de DOM 
 En SASS tenemos un Scope de Bloque
-
 */
 
 /* p{
@@ -272,7 +270,6 @@ body{
     font-family: sans-serif;
     color: white;
 }
-
 .image{
     width: 100%;
 }
