@@ -1,26 +1,21 @@
-$name : value; 
-$selector : h1;
-$value-one: 2rem; 
-$value-two: 3rem; 
-$value : $value-one + $value-two;
+$name: value
+$selector: h1
+$value-one: 2rem
+$value-two: 3rem
+$value: $value-one + $value-two
 
-$color: blue;
+$color: blue
 
-#{$selector}{
-    color: $color;
-    height: $value;
-}
+#{$selector}
+    color: $color
+    height: $value
 
 p{
-    $color-link: red; 
-    $color-span: blue;
+    $color-link: red
+    $color-span: blue
 
     a{
-        color: $color-link,
-    }
+    color: $color-link,
 
     span{
-        color: $color-span;
-    }
-}
-
+    color: $color-span

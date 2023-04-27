@@ -1,31 +1,31 @@
-/* 
-Declaracion de la variable 
 
-:root{
+/* Declaracion de la variable  */
+
+/* :root{
     --color : red;
-}
+} */
 
-Uso de la variable
-h1{
+/* Uso de la variable */
+/* h1{
     color: var(--color, fallack);
-}
+} */
 
-Valores que pueden recibir 
-:root{
+/* Valores que pueden recibir  */
+/* :root{
     --color:hsl | rgba | HEX | ;
     --border: 1px solid red;
     --text: 'Hola mundo!';
     --shadow: 2px 2px red, 2px 2px red, 2px 2px red;
     --color-two: var(--color);
-}
+} */
 
-*/
-/* :root{
-    --primary-color: blueviolet;
-    --warning-color:yellow;
-}
 
-header{
+/* :root{ */
+    /* --primary-color: blueviolet; */
+    /* --warning-color:yellow;
+} */
+
+/* header{
     width: 100%;
     height: 3rem;
     background: var(--primary-color, var(--warning-color));
@@ -51,39 +51,37 @@ p{
     background: red;
 } */
 
-/* 
-   Tipos de scope en variables CSS
 
-   Global 
-   :root{
+   /* Tipos de scope en variables CSS
+
+   Global  */
+   /* :root{
     --color:red;
 }
 
 h1{
     color: var(--color);
-}
+    background-color: var(var-color);
+} */
 
-DOM 
+/* DOM  */
 
-article {
+/* article {
     --color-text:blue;
-}
-*/
+} */
+
 /* Pasa una varibel desde el archivo index.css */
 
 
 /* article p {
     font-size: var(--bg);
     color: var(--color);
-}
+} */
 
-   Hoisting
-    p{
+   /* Hoisting */
+    /* p{
         color:var(--color)
-    }
-
-
- */
+    } */
 
 
 /* p{
@@ -91,7 +89,7 @@ article {
 } */
 
 /* :root{
-    --color-red:red; 
+    --color-red:red;
 }
 
 body{
@@ -104,18 +102,18 @@ body{
 }
 
 .container p{
-    --color: green; 
+    --color: green;
     color: var(--color);
 } */
 
 /*Diferencia entre variables CSS y variables SASS  */
 
-/* :root{ */
-    /* --name:red; 
+/* :root{
+    --name:red;
     --value-one: 2rem;
-    --value-two: 3rem; 
-    --value : calc(var(--value-one) + var(--value-two)); */
-    /* --color:red;
+    --value-two: 3rem;
+    --value : calc(var(--value-one) + var(--value-two));
+    --color:red;
     --color-blue: blue;
 }
 
@@ -124,7 +122,7 @@ body{
 }
 
 h1{
-    color: var(--color-blue);
+    color: var(--color);
     height: var(--value);
     background: yellow;
 }
@@ -157,10 +155,10 @@ a{
     --title-font-size: 1.75rem;
     --columns:1;
     --show-element:none;
+    --background-color: red;
 }
 
-@media screen and (min-width: 1024px){
-
+@media screen and (min-width: 1000px){
     :root{
         --header-height: 4rem;
         --header-margin: 2rem;
@@ -168,6 +166,7 @@ a{
         --title-font-size: 2rem;
         --columns:4;
         --show-element:block;
+        --background-color: blue;
     }
 }
 
@@ -191,7 +190,7 @@ h1{
     top: 0;
     width: 100%;
     height: var(--header-height);
-    background: black;
+    background: var(--background-color);
 }
 
 div{
@@ -228,8 +227,8 @@ h3{
     --boxshadow-card: 0 2px 4px rgba(174, 190, 205, .3);
 } */
 /* @media (prefers-color-scheme: no-prefercer | light | dark) */
-
-/* @media (prefers-color-scheme: dark){
+/* 
+@media (prefers-color-scheme: light){
 :root{
     --body-bg:#1A252D;
     --card-bg: #2a3b47;

@@ -2,43 +2,44 @@
     outline: 5px solid red;
 } */
 
-/* body{
+body{
     display: flex;
     flex-direction: column;
-} */
-/* 
-div{
+}
+
+/* div{
     float: left;
     width: 300px;
     height: 300px; */
     /* shape-outside:inset(100px  round 1rem 2rem 3rem ); */
+    /* shape-outside: polygon(0 0, 100% 0, 100% 75%, 75% 75%); */
+    /* shape-outside: ellipse(100px 100px at 40% 50%); */
 /* } */
 
 /* :root{ */
     /* --clip: circle(50px at 40px 20%); */
     /* --clip:ellipse(100px 100px at 40% 50%); */
     /* --clip: polygon(0 0, 100% 0, 100% 75%, 75% 75%); */
-
 /* } */
 
-/* .clip-path{ */
-    /* clip-path: inset(100px); */
-    /* clip-path: var(--clip); */
-    /* clip-path: url('./imgs/witch-1751025.svg#bruja-logo');
-} */
+/* .clip-path{
+    clip-path: inset(100px);
+    clip-path: var(--clip); */
+    /* clip-path: url('./imgs/witch-1751025.svg'); */
+/* } */
 
-/* .shape-outside{ */
-    /* shape-outside: inset(100px); */
+/* .shape-outside{
+    shape-outside:  circle(100px); */
     /* shape-outside: var(--clip); */
-    /* shape-outside: url('./imgs/witch-1751025.svg');
-    shape-margin: 1rem ;
+    /* shape-outside: url('./imgs/witch-1751025.svg'); */
+    /* shape-margin: 1rem ;
 } */
 
-/* img{
-    display: block; */
+/* img{ */
+    /* display: block; */
     /* width: 150px; */
-    /* border-radius: 2rem; */
-    /* width: 100%;
+    /* border-radius: 2rem;
+    width: 100%;
     height: 100%;
     object-fit: cover; */
 
@@ -61,7 +62,7 @@ div{
     /* clip-path: inset(10%); */
     /* clip-path: circle(100px); */
     /* clip-path: polygon(0 100%, 50% 0, 100% 100%);
-    transition: clip-path 2s;
+    transition: clip-path 30s;
 } */
 
 /* img:hover{ */
@@ -76,23 +77,23 @@ div{
     margin: 0;
 }
 
-/* img{
-    width: 100%;
+img{
+    /* width: 100%;
     height: 100vh;
     object-fit: cover;
     display: block; */
-    /* mask: url('./imgs/puppy-32025.svg') no-repeat center / 500px */
-    /* mask-image: url('./imgs/puppy-32025.svg');
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: 500px; */
+    /* mask: url('./imgs/puppy-32025.svg') no-repeat center / 500px; */
+    /* -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url('./imgs/puppy-32025.svg');
+    -webkit-mask-position: center;
+    -webkit-mask-size: 500px; */
     /* mask-image: url('./imgs/circle.png');
     mask-repeat: no-repeat;
     mask-position: center, 50px center; */
-    /* mask-composite: subtract; */
-    /* mask-composite: intersect; */
-    /* mask-composite: exclude; */
-/* } */
+    /* -webkit-mask-composite: subtract;
+    -webkit-mask-composite: intersect;
+    -webkit-mask-composite: exclude; */
+}
 
 /* Compopsicion de mascaras */
 
@@ -113,11 +114,11 @@ body{
     border-radius: 50%;
     background: blue;
 
-    mask:url('./imgs/circle.png'), url('https://cdn-icons-png.flaticon.com/512/598/598234.png');
-    mask-size: 100%, 3rem;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-composite: subtract;
+    -webkit-mask:url('./imgs/circle.png'), url('https://cdn-icons-png.flaticon.com/512/598/598234.png');
+    -webkit-mask-size: 100%, 3rem;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-composite: subtract;
 } */
 
 *{
@@ -139,7 +140,7 @@ body{
 
 .img{
     min-width:100vw;
-    min-height: 100vh; 
+    min-height: 100vh;
     object-fit: cover;
     display: block;
     background-image:linear-gradient( #ff63a7 10%, #FFBCD9 30%, white 40% , #1ec6ff 70%, #00aae4 80%);
@@ -149,7 +150,8 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    -webkit-mask : url('https://i.postimg.cc/ydTjFcQh/mascara.png') no-repeat center / cover;
+    -webkit-mask : url('https://i.postimg.cc/ydTjFcQh/mascara.png');
+    /* no-repeat center / cover; */
 }
 
 h1{

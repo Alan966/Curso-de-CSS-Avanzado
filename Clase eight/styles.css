@@ -83,8 +83,23 @@ img{
 
 /* Ejercicio multiples filtros en un elemento */
 
-/* 
-img{
+
+/* img{
+    width: 50%;
+}
+
+img:nth-child(2){
+    filter: sepia(0.5) contrast(1.25) saturate(2);
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #f2f2f2;
+}img{
     width: 50%;
 }
 
@@ -104,9 +119,9 @@ body{
 .element{
     width: 200px;
     height: 200px;
-    border-radius: 0.25rem;
+    border-radius: 8rem;
     position: relative;
-    background: white;
+    background: black;
 }
 
 .element::before{
@@ -114,9 +129,10 @@ body{
     position: absolute;
     display: block;
     background: grey;
-    width: 90%;
-    left: 5%;
-    height: 1rem;
+    width: 100%;
+    top: 10.5rem;
+    left: 3%;
+    height: 3rem;
     border-radius: 100%;
     bottom: -0.5rem;
     filter: blur(3px) opacity(0.25);

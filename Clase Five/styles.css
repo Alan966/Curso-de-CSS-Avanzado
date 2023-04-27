@@ -1,12 +1,13 @@
-/* div{ */
+div{
     /* margin-left: 2rem; */
-    /* display: list-item;
-    list-style-type: none;
-} */
+     display: list-item;
+    list-style-type: upper-roman;
+    list-style-position:inside ;
+}
 
 /* symbols(order, 'a' 'b' 'c') */
 
-/* ul, ol{ */
+/* ul, ol{  */
     /* list-style-type: circle | decimal |  upper-roman | lower-roman; */
     /* list-style-type: upper-roman; */
     /* list-style-type: symbols(symbolic  '4' '1' '2'); */
@@ -16,24 +17,24 @@
 
     /* outline: 1px solid red; */
     /* padding-left: 0; */
-    /* list-style-position: inside;
-}
+    /* list-style-position: inside; */
+/* } */
 
- li::marker{ */
-    /* outline: 1px solid blue; */
-    /* content: url(./img/airpods.png);
+ /* li::marker{ 
+    outline: 1px solid blue;
+    content: url(./img/airpods.png);
     color: red;
 } */
-/*
-li li {
-    outline: 1px solid green;
-} */
 
-/* li{
-    display: flex;
+/* li {
+    outline: 1px solid green;
 }
 
-li::before{
+li{
+    display: flex;
+} */
+
+/* li::before{
     content: '';
     display: block;
     width: 1rem;
@@ -45,12 +46,12 @@ li::before{
 
 /* Contadores */
 
-body{
+/* body{
     font-size: 2rem;
 }
 
-/* ul{
-    counter-reset: list-counter 5;
+ul{
+    counter-reset: list-counter -1;
     list-style-type: none;
 }
 
@@ -62,24 +63,26 @@ li::before{
     content: counter(list-counter, upper-roman) '. ';
 } */
 
-/* ol{ */
-    /* list-style: none;
-    counter-reset: list-counter; */
-    /* counter-increment: list-counter;
+/* ol{
+    list-style: none;
+    counter-reset: list-counter 2;
 }
+li{
+    counter-increment: list-counter 4;
 
+}
 li::before{
     content: counters(list-counter, '.', decimal-leading-zero) ' ';
-} */
+}  */
 
 /* Ejercicio de subcapitulos */
-/* 
-body{
+
+/* body{
     counter-reset: chapter;
 }
 
 section{
-    counter-reset: sub-cahpter;
+    counter-reset: sub-chapter;
     counter-increment: chapter;
 }
 

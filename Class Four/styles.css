@@ -24,7 +24,7 @@ body{
 }
 
 .container:empty::before{
-    content: 'No hay contenido';
+    content: "No hay contenido";
 } */
 
 /* Attr() */
@@ -39,8 +39,7 @@ p::after{
     content: attr(data-money);
     font-weight: 600;
 } */
-
-body{
+/* body{
     font-size: 2rem;
     font-family: sans-serif;
 }
@@ -87,11 +86,11 @@ img{
     text-align: center;
     font-size: 1rem;
     opacity: 0.8;
-}
+} */
 
 
-/*p{
-    quotes: '\201F' '\201D';
+/* p{
+    quotes: '\0028' '\0029';
 }
 
 p::before{
@@ -102,7 +101,7 @@ p::after{
     content: close-quote;
 } */
 
-/* body{
+ /* body{
     font-size: 1.5rem;
     font-family: sans-serif;
 }
@@ -133,20 +132,22 @@ p::after{
 
 .user.mexico::after{
     background: url(./img/mexico.png);
-} */
+}
 
-/* .container::before, 
+.container::before, 
 .container::after{
     content: '';
     display: block;
-} */
-*{
+}  */
+
+
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* body{
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,8 +155,11 @@ p::after{
     font-size: 1.5rem;
     font-family: sans-serif;
 }
-
+body:hover .tooltip{
+    display: block;
+}
 .tooltip{
+    display: none;
     cursor: pointer;
     position: relative;
     padding: 0.75rem 1.5rem;
@@ -175,15 +179,16 @@ p::after{
     background: inherit;
     display: block;
     transform: translate(-50%) rotate(45deg);
-}
+} */
 
-.heart{
+/* .heart{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     background: red;
     transform: rotate(-45deg);
     border-radius: 5px;
+    margin: 4rem;
 }
 
 .heart::before, 
@@ -207,7 +212,7 @@ p::after{
 
 /* Boton hamburguesa */
 
-body{
+/* body{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,9 +220,9 @@ body{
 } 
  .button{
     width: 4rem;
-    height: 3.25rem; 
-    background: red;
-    position: relative;
+    height: 3.25rem;  */
+    /* background: red; */
+    /* position: relative;
     cursor: pointer;
     transition: transform 0.25s;
 }
@@ -249,9 +254,9 @@ transform: translateY(-50%);
 
 .button::after{
    bottom: 0;
-} 
+} */
 /* Boton en su estado activo */
-.button.active{
+/* .button.active{
    transform: rotate(180deg);
 }
 
@@ -267,11 +272,11 @@ transform: translateY(-50%);
 .button.active::after{
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
-}
+} */
 
 /*  Pseudoelementos con variables CSS */
 
-body{
+ /* body{
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -280,8 +285,8 @@ body{
     font-size: 1.25rem;
     font-family: sans-serif;
     flex-direction: column;
-}
-
+} */
+/*
 p{
     --color:red;
     margin-bottom: 1rem;
@@ -289,11 +294,11 @@ p{
 
 p::selection{
     color: white;
-    background: var(--color);
+    background: var(--color); */
     /* text-shadow: 2px 2px 2px; */
-}
-/* 
-.message{
+/* } */
+
+/* .message{
     --bg: blue;
     --message: 'Este es un mensaje';
     --icon:	'\1F60A';
@@ -327,11 +332,11 @@ p::selection{
 
 .message.error{
     --icon:'\1F525';
-    --message: 'Error al terminar tu compra'; 
+    --message: 'Error al terminar tu compra';
     --bg:tomato;
 } */
 
-/* p::first-line{
+p::first-line{
     color: red;
 }
 
@@ -356,9 +361,8 @@ p::first-line{
     color: #58B3F3;
     font-weight: 800;
     text-transform: uppercase;
-} */
-
-p:hover::first-letter{
+}
+ p:hover::first-letter{
     color: var(--color);
 
 }
@@ -382,4 +386,4 @@ p:nth-child(2){
 p:nth-child(3){
     --color:green;
 }
-
+ 

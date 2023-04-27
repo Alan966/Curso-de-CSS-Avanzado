@@ -2,54 +2,53 @@
     width: 300px;
     height: 300px;
     background: red; */
-
     /* overflow:visible | hidden | auto | scroll  ; */
-    /* overflow-y: hidden; */
-/* } */
+    /* overflow-x: scroll;
+}
 
-/* p{
+p{
     white-space: nowrap;
-} */
+}
 
-/* .overflow{
+.overflow{
     width: 100%;
     height: 100%;
     overflow-y: auto;
-} */
-
-/* .overflow{
-    overflow: visible;
 }
 
-.element{
+.overflow{
+    overflow: visible;
+}
+*/
+/* .element{
     width: 50px;
     height: 50px;
     background: black;
-    float: left; */
-    /* position: absolute;
+    float: left;
+    position: absolute;
     bottom: -50px;
-    right: -50px; */
-/* } */
+    right: -50px;
+} */
 
 /* Smooth scroll con CSS */
-/* 
-section{
+
+/* section{
     display: grid;
     grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(2, 300px);
     gap: 1rem;
     width: 300px;
     height: 300px;
     overflow: auto;
-    scroll-padding: 3rem 0 0 5rem; */
+    scroll-padding: 5rem 0 0 5rem; */
     /* display: flex; */
 
     /* scroll-snap-type: eje type; */
-    
-    /* scroll-snap-type: both mandatory; */
+/*
+    scroll-snap-type: left mandatory;
 
-    /* scroll-snap-type: y proximity; */
-    /* scroll-behavior: smooth; */
+    scroll-snap-type: left proximity;
+    scroll-behavior: smooth; */
     /* display: flex; */
 /* } */
 
@@ -64,14 +63,14 @@ html{
     margin: 0; */
     /* scroll-behavior: smooth; */
     /* scroll-padding-top: 4rem;
-} */
-/* 
+}
+
 section div{ */
     /* flex: none; */
-    /* display: flex; */
-    /* scroll-margin-top: 4rem; */
+    /* display: flex;
+    scroll-margin-top: 4rem; */
     /* scroll-snap-align: start; */
-    /* scroll-snap-align: center;
+    /* scroll-snap-align: end;
 
 
     justify-content: center;
@@ -80,7 +79,6 @@ section div{ */
     color: white;
     flex: none;
     width: 100%;
-    height: 100vh;
     height: 100%;
     background: blue;
 }
@@ -113,13 +111,12 @@ html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
-
 nav{
     display: flex;
     flex-direction: column;
     position: fixed;
     right: 1rem;
-    top:50%; 
+    top:50%;
     transform: translateY(-50%);
 }
 
@@ -135,18 +132,18 @@ a:hover::before{
 
 a:hover::after{
     opacity: 1;
-} 
+}
 
 a::after{
     content: attr(href);
     position: absolute;
-    left: -3.5rem;
-    top: 0.25rem;
-    font-size: 0.75rem;
+    left: -3.5rem; */
+    /* top: 0.25rem; */
+    /* font-size: 0.75rem;
     font-family: sans-serif;
     color: white;
     opacity: 0;
-    transition: opacity 0.25s;
+    transition: opacity 0.50s;
 }
 
 a::before{
@@ -157,7 +154,7 @@ a::before{
     border-radius: 50%;
     background: white;
     margin-bottom: 0.5rem;
-    transition: transform 0.25s;
+    transition: transform 0.50s;
 }
 
 section{
@@ -190,8 +187,8 @@ section:nth-of-type(4){
 
 /* Todas las partes de los scrolls */
 
-/* 
-body{
+
+/* body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,8 +244,8 @@ body{
     background: deeppink;
 } */
 
-/* 
-.container::-webkit-scrollbar-button:decrement{
+
+/* .container::-webkit-scrollbar-button:decrement{
     background: deeppink;
 }
 
@@ -275,7 +272,7 @@ p{
 
 /* Ejercicio de tema dark y white para scroll */
 
-:root{
+/* :root{
     --track-bg: #eee; 
     --thumb-bg: #ccc; 
     --thumb_hover: #aaa; 
@@ -289,9 +286,9 @@ p{
         --track-bg: #4E5458;
         --thumb-bg: #222629;
     }
-    body{
+    body{ */
         /* background: black; */
-        background: #141618;
+        /* background: #141618;
     }
 
     .container{
@@ -341,4 +338,4 @@ body{
 
 p{
     width: 400px;
-}
+} */

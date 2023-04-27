@@ -1,10 +1,10 @@
 /* Ejercicio de las tablas */
 
-/* body{
+body{
     font-family: sans-serif;
 }
 
-table, th, td{
+/* table, th, td{
     border: 1px solid black;
 }
 table{
@@ -13,13 +13,13 @@ table{
 
 table:nth-of-type(1){
     border-collapse: separate;
-    border-spacing: 0.25rem 0.5rem; */
-    /* empty-cells: hide; */
-    /* table-layout: fixed;
+    border-spacing: 0.25rem 0.5rem;
+    empty-cells: hide;
+    table-layout: fixed;
     width: 100%;
 }
 
-td{
+th{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -39,16 +39,19 @@ table:nth-of-type(2) caption{
 } */
 
 /* Representacion de una tabal con div's y estilos*/
-/* 
-.table{
+
+/* .table{
     display: table;
-    border :1px solid black; 
+    border :1px solid black;
+    margin: 2rem;
 }
 
 .thead{
     display: table-header-group;
 }
-
+.tbody{
+    display: table-row-group;
+}
 .tfood{
     display: table-footer-group;
 }
@@ -59,14 +62,16 @@ table:nth-of-type(2) caption{
 
 .td{
     display: table-cell;
+    outline: 1px solid black;
+    padding: 0.5rem;
 }
 
 .caption{
     display: table-caption;
+    text-align: center;
 } */
 
-/* 
-body{
+/* body{
     font-family: sans-serif;
 }
 
@@ -81,7 +86,7 @@ tr:not(.tr-head):hover{
     background: #eee;
 }
 
-td:hover, 
+td:hover,
 th:not(.th-head):hover{
     background: #ccc;
 }
@@ -105,20 +110,20 @@ td{
 
 /* Apariencia de inputs */
 
-/* input[type="text"]{
-    background: red;
-    -moz-appearance: checkbox;
-} 
+ /* input[type="text"]{
+    background: red; */
+    /* -moz-appearance: checkbox; */
+/* }
 
-input[type="checkbox"]{
-    background: red;
-    display: none;
-    -moz-appearance: none;
-}
+input[type="checkbox"]{ */
+    /* background: red; */
+    /* display: none; */
+    /* -moz-appearance: none; */
+/* }
 
-input[type="checkbox"]::before{ 
-    content: 'Hola mundo!'; 
-    content: '';
+input[type="checkbox"]::before{ */
+    /* content: 'Hola mundo!'; */
+    /* content: '';
     display: block;
     width: 1rem;
     height: 1rem;
@@ -176,8 +181,8 @@ body{
     position: relative;
 }
 
-.container:focus-within label, 
-input:not(:placeholder-shown) + 
+.container:focus-within label,
+input:not(:placeholder-shown) +
 label{
     display: none;
 }
@@ -192,9 +197,9 @@ label{
     color: #ccc;
 }
 
-input:required + label::before{
-    background: yellow;
-    content: '*';
+input:required + label::before{ */
+    /* background: yellow; */
+    /* content: '*';
     color: red;
 }
 
@@ -208,23 +213,23 @@ input:read-only{
 
 input:disabled{
     background: black;
-}
+} */
 
-input:enabled{
-    background: blue;
-}   */
+/* input:enabled{ */
+    /* background: blue; */
+/* } */
 
  /* input:read-write{
     background: red;
-} 
+}
 
 input:valid{
     color: white;
-    background: red;
+    background: yellow;
 }
 
 input:invalid{
-    background: red;
+    background:green;
 }
 
 input::placeholder{
@@ -234,13 +239,13 @@ input::placeholder{
     word-spacing: 1rem;
     opacity: 1;
     background-color: blue;
-}  */
+} */
 
 /* Ejercicio del formulario */
 
 /* fieldset:valid{
     background: red;
-}   */
+} */
 *{
     margin:0;
     padding: 0;
@@ -323,4 +328,4 @@ input[type="submit"]{
     gap: 1rem;
     flex-grow: 1;
     flex-basis: 40%;
-} 
+}
